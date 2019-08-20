@@ -1,2 +1,27 @@
 # JavaScript
 Simple Calculator
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+      var a,b,result;
+      function setValues(){a=Number(document.getElementById("a").value); b=Number(document.getElementById("b").value);}
+      function sum() {setValues(); result = a+b; alert(result);}
+      function subtract() {setValues(); result = a-b;alert(result);}
+      function mult() {setValues(); result = a*b; alert(result);}
+      function div() {setValues(); result = a/b; alert(result);}
+</script>
+</head>
+<body>
+<div>
+   <input id="a" type="text"/>
+   <input id="b" type="text"/>
+   <input type="button" onclick="sum()" value="+"/>
+   <input type="button" onclick="subtract()" value="-"/>
+   <input type="button" onclick="mult()" value="x"/>
+   <input type="button" onclick="div()" value="/"/>
+</div>
+</body>
+</html>
